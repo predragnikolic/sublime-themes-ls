@@ -1,0 +1,16 @@
+# Getting started
+
+1. Compile the project with `npm run compile`.
+2. Paste the below client configuration to LSP.sublime-settings:
+
+```json
+{
+    "clients": {
+        "st-themes-ls": {
+            "enabled": true,
+            "command": ["node", "/PATH_TO/st-themes-ls/out/server.js", "--stdio"],
+            "selector": "source.json"
+        }
+    }
+}
+```
